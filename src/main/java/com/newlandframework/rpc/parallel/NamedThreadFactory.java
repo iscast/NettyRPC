@@ -21,6 +21,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 线程工厂
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NamedThreadFactory.java
  * @description:NamedThreadFactory功能模块

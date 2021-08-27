@@ -14,4 +14,8 @@
 客户端并发发起RPC调用请求，然后RPC服务端使用Netty连接器，分派出N个NIO连接线程，
 这个时候Netty连接器的任务结束。然后NIO连接线程是统一放到Netty NIO处理线程池进行管理，这个线程池里面会对具体的RPC请求连接进行消息编码、消息解码、消息处理等等一系列操作。
 最后进行消息处理（Handler）的时候，处于性能考虑，这里的设计是，直接把复杂的消息处理过程，丢给专门的RPC业务处理线程池集中处理，然后Handler对应的NIO线程就立即返回、不会阻塞。这个时候RPC调用结束，客户端会异步等待服务端消息的处理结果，本文是通过消息回调机制实现（MessageCallBack）。
-　　再来说一说Netty对于RPC消息的解码、编码、处理对应的模块和流程，具体如下图所示：
+再来说一说Netty对于RPC消息的解码、编码、处理对应的模块和流程，具体如下图所示：
+
+newlandframework.netty.rpc.core包是NettyRPC的核心实现。
+newlandframework.netty.rpc.model包里面，则封装了RPC消息请求、应答报文结构，以及RPC服务接口与实现绑定关系的容器定义。
+newlandframework.netty.rpc.config里面定义了NettyRPC的服务端文件配置属性

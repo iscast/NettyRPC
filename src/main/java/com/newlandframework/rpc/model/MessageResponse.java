@@ -20,6 +20,7 @@ import java.io.Serializable;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 /**
+ * 服务应答结构
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageResponse.java
  * @description:MessageResponse功能模块

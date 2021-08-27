@@ -42,6 +42,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.RejectedExecutionHandler;
 
 /**
+ * rpc线程池封装
  * @author tangjie<https://github.com/tang-jie>
  * @filename:RpcThreadPool.java
  * @description:RpcThreadPool功能模块

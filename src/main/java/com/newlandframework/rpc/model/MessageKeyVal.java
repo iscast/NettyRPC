@@ -16,6 +16,7 @@
 package com.newlandframework.rpc.model;
 
 /**
+ * 服务映射容器
  * @filename:MessageKeyVal.java
  * @description:MessageKeyVal功能模块
  * @author tangjie<https://github.com/tang-jie>
