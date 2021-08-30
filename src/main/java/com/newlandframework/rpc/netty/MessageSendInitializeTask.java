@@ -27,6 +27,7 @@ import java.util.concurrent.TimeUnit;
 import com.newlandframework.rpc.serialize.RpcSerializeProtocol;
 
 /**
+ * Rpc客户端线程任务处理
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageSendInitializeTask.java
  * @description:MessageSendInitializeTask功能模块

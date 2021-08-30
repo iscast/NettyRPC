@@ -60,6 +60,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 /**
+ * 接收调用线程池
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageRecvExecutor.java
  * @description:MessageRecvExecutor功能模块

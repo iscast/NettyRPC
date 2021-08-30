@@ -37,6 +37,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * rpc服务器配置加载
  * @author tangjie<https://github.com/tang-jie>
  * @filename:RpcServerLoader.java
  * @description:RpcServerLoader功能模块
@@ -61,6 +62,7 @@ public class RpcServerLoader {
     private RpcServerLoader() {
     }
 
+    // 并发双重锁定
     public static RpcServerLoader getInstance() {
         if (rpcServerLoader == null) {
             synchronized (RpcServerLoader.class) {

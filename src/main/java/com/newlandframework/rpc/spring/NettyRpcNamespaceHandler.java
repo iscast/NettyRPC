@@ -25,6 +25,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 
 /**
+ *  初始化应用xml解析器
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NettyRpcNamespaceHandler.java
  * @description:NettyRpcNamespaceHandler功能模块

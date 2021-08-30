@@ -24,6 +24,7 @@ import com.newlandframework.rpc.core.MessageCallBack;
 import com.newlandframework.rpc.model.MessageRequest;
 
 /**
+ * Rpc客户端消息处理
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageSendProxy.java
  * @description:MessageSendProxy功能模块

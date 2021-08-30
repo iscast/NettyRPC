@@ -26,6 +26,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * reciv server解析xmlrpcRegistry时触发 传入解析xml得到的ipAddr;protocol;echoApiPort;
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NettyRpcRegistery.java
  * @description:NettyRpcRegistery功能模块

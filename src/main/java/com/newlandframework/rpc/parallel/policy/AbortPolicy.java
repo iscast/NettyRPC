@@ -21,6 +21,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 线程池异常策略
  * @author tangjie<https://github.com/tang-jie>
  * @filename:AbortPolicy.java
  * @description:AbortPolicy功能模块

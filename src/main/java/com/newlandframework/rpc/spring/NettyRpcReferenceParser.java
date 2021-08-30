@@ -22,6 +22,7 @@ import org.springframework.beans.factory.xml.ParserContext;
 import org.w3c.dom.Element;
 
 /**
+ * 客户端接口代理解析器
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NettyRpcReferenceParser.java
  * @description:NettyRpcReferenceParser功能模块

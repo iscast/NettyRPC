@@ -27,6 +27,7 @@ import com.newlandframework.rpc.model.MessageRequest;
 import com.newlandframework.rpc.model.MessageResponse;
 
 /**
+ * Rpc消息回调
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageCallBack.java
  * @description:MessageCallBack功能模块

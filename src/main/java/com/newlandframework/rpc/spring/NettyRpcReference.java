@@ -25,6 +25,7 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 
 /**
+ * 客户端接口代理
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NettyRpcReference.java
  * @description:NettyRpcReference功能模块

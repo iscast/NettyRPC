@@ -39,6 +39,7 @@ public class NettyRpcService implements ApplicationContextAware, ApplicationList
     private String filter;
     private ApplicationContext applicationContext;
 
+    // 又解析receserver的xml时触发调用，将接口对应的server放入 MessageRecvExecutor的handlerMap里
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
         ServiceFilterBinder binder = new ServiceFilterBinder();
@@ -57,6 +58,7 @@ public class NettyRpcService implements ApplicationContextAware, ApplicationList
     public void setApplicationContext(ApplicationContext applicationContext)
             throws BeansException {
         this.applicationContext = applicationContext;
+        // 这个句代码没看明白
         applicationContext.publishEvent(new ServerStartEvent(new Object()));
     }
 

@@ -21,6 +21,9 @@ import io.netty.channel.socket.SocketChannel;
 import com.newlandframework.rpc.serialize.RpcSerializeProtocol;
 
 /**
+ * Rpc客户端管道初始化
+ * ObjectDecoder 底层默认继承半包解码器LengthFieldBasedFrameDecoder处理粘包问题的时候，
+ * 消息头开始即为长度字段，占据4个字节。这里出于保持兼容的考虑
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageSendChannelInitializer.java
  * @description:MessageSendChannelInitializer功能模块

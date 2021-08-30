@@ -19,6 +19,7 @@ import com.google.common.reflect.Reflection;
 import com.newlandframework.rpc.serialize.RpcSerializeProtocol;
 
 /**
+ * Rpc客户端执行模块 （主要作用是根据远程服务 为客户端生成接口的动态代理）
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MessageSendExecutor.java
  * @description:MessageSendExecutor功能模块

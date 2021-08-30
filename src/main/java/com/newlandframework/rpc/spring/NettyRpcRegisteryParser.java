@@ -22,6 +22,7 @@ import org.springframework.beans.factory.xml.ParserContext;
 import org.w3c.dom.Element;
 
 /**
+ * reciv server解析xmlrpcRegistry时触发
  * @author tangjie<https://github.com/tang-jie>
  * @filename:NettyRpcRegisteryParser.java
  * @description:NettyRpcRegisteryParser功能模块
