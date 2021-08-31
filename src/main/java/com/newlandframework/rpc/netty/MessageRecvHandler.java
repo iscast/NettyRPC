@@ -40,6 +40,12 @@ public class MessageRecvHandler extends ChannelInboundHandlerAdapter {
         this.handlerMap = handlerMap;
     }
 
+    /**
+     * 接收客户端请求， 处理客户端请求
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         MessageRequest request = (MessageRequest) msg;

@@ -28,6 +28,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
+ * spring aop代理类 代理远程接口 发起调用
  * @author tangjie<https://github.com/tang-jie>
  * @filename:MethodProxyAdvisor.java
  * @description:MethodProxyAdvisor功能模块

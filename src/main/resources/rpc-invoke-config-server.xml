@@ -24,7 +24,7 @@
                       ref="storeService" filter="simpleFilter"></nettyrpc:service>
 
     <nettyrpc:registry id="rpcRegistry" ipAddr="${rpc.server.addr}" echoApiPort="${rpc.server.echo.api.port}"
-                       protocol="PROTOSTUFFSERIALIZE"></nettyrpc:registry>
+                       protocol="HESSIANSERIALIZE"></nettyrpc:registry>
 
     <bean id="calcAddService" class="com.newlandframework.rpc.services.impl.AddCalculateImpl"></bean>
     <bean id="calcMultiService" class="com.newlandframework.rpc.services.impl.MultiCalculateImpl"></bean>

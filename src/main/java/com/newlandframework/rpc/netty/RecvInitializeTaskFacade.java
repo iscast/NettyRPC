@@ -42,10 +42,12 @@ public class RecvInitializeTaskFacade {
         this.handlerMap = handlerMap;
     }
 
+    // 初始化处理请求类
     public Callable<Boolean> getTask() {
         return isMetrics ? getMetricsTask() : new MessageRecvInitializeTaskAdapter(request, response, handlerMap);
     }
 
+    // 判断是否初始化jmx处理请求类
     private Callable<Boolean> getMetricsTask() {
         return jmxMetricsHash ? new HashMessageRecvInitializeTask(request, response, handlerMap) : new MessageRecvInitializeTask(request, response, handlerMap);
     }
